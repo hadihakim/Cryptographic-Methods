@@ -1,0 +1,32 @@
+Project: Implementing  cryptographic methods and algorithms on numbers. 
+This project was build through javafx software.
+It is a simplified cryptographic methods application.
+Materials:
+1- Power modular calculator: users enter 'g', 'e' and 'p'. The program 
+calculate 'g^e mod p'
+2- Modular inverse calculator: users enter 'a', 'm'. The program calculate 
+'inverse of a mod m'.
+3- Diffie Hellman: It gives an overview about diffie hellman. The user enter
+ 'g', 'p' and his private key. then the program generate private key of Bob
+calculating his public key using 'g' and 'p' that the user enter, the program
+ display the public key of Bob and the secret key valid for the user and Bob 
+to use.
+4- RSA: In this application RSA has two modes:
+   a) RSA Encryption mode: user enter plaintext, public key 'e', and modulo 'm'.
+      The program calculate ciphertext (plaintext ^ e mod m)
+      and display the ciphertext.
+   b) RSA Decryption mode: user enter Ciphertext and his private key 'd' and mod 
+      'm'. The program calculate plaintext (ciphertext ^ d mod m)
+5- Elgamal: In this application Elgamal has two modes:
+   a) Elgamal Encryption mode: user enter plaintext, mod 'p', and 'g'. The program
+      generate a secret key of Bob and calculate the public key and in class 
+      cryptomethod there is function ElgamalEnc() that create inside a random 'r' 
+      needed to calculate ciphertext 1 (g^r mod p) and also calculate
+      ciphertext 2 by generating k (publickey ^ r mod p) then ciphertext 2 
+      (k * plaintext mod p).
+      Display: public key generated, ciphertext 1, ciphertext 2.
+    b) Elgamal Decryption mode: user enter ciphertext 1, ciphertext 2, mod 'p' 
+       and his private key. The program first calculate k (c1^private key mod p)
+       then find inverse of k mod p k^-1 then using ciphertext 2 and k^-1 we find plaintext (k^-1 * ciphertext 2 mod p).
+
+About class cryptomethods: It is class that have all functions created for cryptographic methods functionality implemented in the application.
